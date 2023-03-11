@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.chiefcuisine.ui.fragments.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_allFoodItemsFragment"
+            app:destination="@id/allFoodItemsFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_allRecommendedItemsFragment"
+            app:destination="@id/allRecommendedItemsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/categoriesFragment"
+        android:name="com.example.chiefcuisine.ui.fragments.CategoriesFragment"
+        android:label="fragment_categories"
+        tools:layout="@layout/fragment_categories" >
+        <action
+            android:id="@+id/action_categoriesFragment_to_categoryFoodItemsFragment"
+            app:destination="@id/categoryFoodItemsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/videoFragment"
+        android:name="com.example.chiefcuisine.ui.fragments.VideoFragment"
+        android:label="fragment_video"
+        tools:layout="@layout/fragment_video" />
+    <fragment
+        android:id="@+id/allFoodItemsFragment"
+        android:name="com.example.chiefcuisine.ui.fragments.AllFoodItemsFragment"
+        android:label="AllFoodItemsFragment" />
+    <fragment
+        android:id="@+id/allRecommendedItemsFragment"
+        android:name="com.example.chiefcuisine.ui.fragments.AllRecommendedItemsFragment"
+        android:label="AllRecommendedItemsFragment" />
+    <fragment
+        android:id="@+id/categoryFoodItemsFragment"
+        android:name="com.example.chiefcuisine.ui.fragments.CategoryFoodItemsFragment"
+        android:label="fragment_category_food_items"
+        tools:layout="@layout/fragment_category_food_items" >
+        <argument
+            android:name="category"
+            app:argType="com.example.chiefcuisine.utils.CategoryItems" />
+    </fragment>
+</navigation>

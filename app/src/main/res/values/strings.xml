@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Chief Cuisine</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="first_heading">BROWSE THROUGH VARIOUS FOOD RECIPES</string>
+    <string name="first_desc">Find recipes that use as many of the ingredients you have available as possible while limiting missing ingredients.</string>
+    <string name="second_heading">GET NUTRITIONAL DATA</string>
+    <string name="second_desc">We compute the nutritional information for recipes automatically using a proprietary algorithm. With this information, you can find individual recipes or even create entire meal plans that satisfy your users\' dietary goals.</string>
+    <string name="heading_third">WATCH VIDEOS</string>
+    <string name="third_desc">Watch Videos related to health and fitness, various food items and recipes</string>
+    <string name="intro_text">What would you like to eat today?</string>
+</resources>

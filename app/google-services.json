@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "393618188177",
+    "project_id": "chief-cuisine",
+    "storage_bucket": "chief-cuisine.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:393618188177:android:75b13d0ed4d73d3c8f5c30",
+        "android_client_info": {
+          "package_name": "com.example.chiefcuisine"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "393618188177-k9ap2avmdds2rmbc6b7mellspgaf4g4n.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB9mrQvAGHruTNyCMNeNUkueRaDn4BvA_4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "393618188177-k9ap2avmdds2rmbc6b7mellspgaf4g4n.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

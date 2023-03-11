@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+   <data>
+
+   </data>
+
+   <androidx.constraintlayout.widget.ConstraintLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       tools:context=".ui.fragments.OnBoardingFragment">
+
+      <androidx.viewpager2.widget.ViewPager2
+          android:id="@+id/viewPagerScreen"
+          android:layout_width="match_parent"
+          android:layout_height="0dp"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintTop_toTopOf="parent"
+          app:layout_constraintBottom_toTopOf="@+id/dots_indicator">
+
+      </androidx.viewpager2.widget.ViewPager2>
+
+      <com.tbuonomo.viewpagerdotsindicator.DotsIndicator
+          android:id="@+id/dots_indicator"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          app:dotsColor="#BFA59D"
+          app:dotsCornerRadius="8dp"
+          app:dotsSize="16dp"
+          app:dotsSpacing="4dp"
+          app:dotsWidthFactor="2.5"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintBottom_toBottomOf="parent"
+          android:layout_marginBottom="@dimen/_60sdp"
+          app:progressMode="true"
+          app:selectedDotColor="#FF5722" />
+
+      <com.google.android.material.button.MaterialButton
+          android:id="@+id/btnGetStarted"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_margin="@dimen/_12sdp"
+          android:text="get started"
+          app:cornerRadius="@dimen/_12sdp"
+          app:layout_constraintBottom_toBottomOf="parent"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toBottomOf="@+id/dots_indicator" />
+
+
+   </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
